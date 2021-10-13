@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: bisque;
+    height: 80px;
+}
+
+footer {
+    background-color: coral;
+    height: 80px;
+
+    /* Si quisiera hacerlo con "fixed", serían estas 3 líneas, pero la barra de "footer" quedaría siempre en la misma posición. */
+
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+
+.wrapper {
+    background-color: rgb(160, 154, 144);
+    font-size: 5em;
+    /* Le calculo la altura de viewport, menos "footer" y "navbar". */
+    min-height: calc(100vh - 160px);
+}
